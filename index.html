@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="body-header">
+        <p>Update CSS Variables with <span>JS</span></p>
+      </div>
+      <nav>
+        <label for="spacing">Spacing:</label>
+        <input
+          id="spacing"
+          name="spacing"
+          type="range"
+          min="4"
+          max="10"
+          value="4"
+          data-sizing="vh"
+        />
+
+        <label for="blur">Blur:</label>
+        <input
+          id="blur"
+          name="blur"
+          type="range"
+          min="0"
+          max="10"
+          value="0"
+          data-sizing="px"
+        />
+
+        <label for="base-color">Base Color</label>
+        <input id="base-color" type="color" name="base-color" value="#00d8ff" />
+      </nav>
+      <div class="img-wrapper">
+        <div class="img">
+          <img
+            src="https://source.unsplash.com/7bwQXzbF6KE/800x500"
+            alt="demonstrating img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js" />
+  </body>
+</html>

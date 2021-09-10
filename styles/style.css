@@ -1,0 +1,49 @@
+:root {
+  --spacing: 4vh;
+  --blur: 0px;
+  --base-color: #00d8ff;
+}
+
+body {
+  background-color: #193549;
+  text-align: center;
+  color: white;
+}
+
+.body-header {
+  font-size: 40px;
+}
+
+nav {
+  font-size: 2em;
+  padding: 1em;
+}
+
+#base-color {
+  width: 8%;
+}
+
+.img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+img {
+  width: 50vh;
+  padding: var(--spacing);
+  background-color: var(--base-color);
+  -webkit-filter: blur(var(--blur));
+          filter: blur(var(--blur));
+}
+
+span {
+  color: var(--base-color);
+}
+/*# sourceMappingURL=style.css.map */
